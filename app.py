@@ -14,10 +14,10 @@ a_tags = soup.find_all('a')
 
 constituencies = [a_tag.get_text(strip=True) for a_tag in a_tags if "NGCDF" in a_tag.get_text()]
 
-url1 = "https://www.oagkenya.go.ke/2021-2022-constituency-development-fund-audit-reports/"
-response = requests.get(url1)
-content = response.text
-soup = BeautifulSoup(content, 'html.parser')
+#url1 = "https://www.oagkenya.go.ke/2021-2022-constituency-development-fund-audit-reports/"
+#response = requests.get(url1)
+#content = response.text
+#soup = BeautifulSoup(content, 'html.parser')
 
 
 links = soup.find_all('a', class_="dlp-download-link dlp-download-button document-library-pro-button button btn")
